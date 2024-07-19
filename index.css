@@ -1,0 +1,244 @@
+:root {
+  --background-color: #cccccc;
+  --text-color: black;}
+
+* {
+  scroll-behavior: smooth;
+  /* color: white; */
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  scroll-behavior: smooth;
+  background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode {
+  --background-color: black;
+  --text-color: white;
+}
+main {
+  align-items: center;
+}
+header {
+  background-color: grey;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+}
+
+
+
+a {
+  padding: 7px 13px;
+  /* background: green; */
+  border-radius: 6px;
+}
+a:hover {
+  background: black;
+  color: white;
+  transition: 0.5s ;
+}
+#contact:hover {
+background: none;
+}
+#name {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/512/556/desktop-wallpaper-carpentry-on.jpg);
+  width: 100%;
+}
+#name-2 {
+  padding: 180px;
+  text-align: center;
+}
+#Glass {
+  background-image: url(./images/whoweare.jpg);
+  display: inline-block;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+h1 {
+  font-family: "Syne Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f97304;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e36202;
+}
+
+.map {
+  flex: 1;
+  min-width: 300px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+}
+#fit {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 975px) and (min-width: 200px) {
+  * {
+    font-size: large;
+  }
+  header {
+    background-color: grey;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* display: flex; */
+  }
+ 
+ #name-2{
+  font-size: 40px;
+ text-align: center;
+ margin-left: 0;
+ padding-top: 250px;
+ padding-bottom: 250px;
+ padding-left: 0;
+ padding-right: 0;
+ }
+#who-we-are{
+  width: 100%;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#Glass {
+  width: 90%;
+  align-items: center;
+}
+#bio {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#bio-glass{
+  margin-left: 30px;
+}
+#who-we{
+  /* width: 100%; */
+  font-size: small;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+ #bio p {
+  font-size: small;
+  text-align: center;
+  color: white;
+ }
+ #avatar {
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+ }
+  #products {
+    font-size: 50px;
+    /* color: lime; */
+    margin-top: 50px;
+  }
+  .text-5xl {
+    font-size: 30px;
+  }
+  #text-2xl {
+    font-size: 15px;
+    padding-top: 0;
+    width: 100%;
+  }
+  #cupboard {
+    /* width: 40%; */
+    margin-left: 15px;
+  }
+  #bed {
+    /* margin-right: 10px; */
+    /* width: 50%; */
+    /* border: 2px solid red; */
+    padding-left: 10px;
+  }
+  #text-3xl {
+    font-size: 30px;
+  }
+  #store-text {
+    font-size: 30px;
+  }
+  a:hover {
+    background: grey;
+    color: white;
+    transition: 0.5s;
+  }
+  #slide {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #map{
+    margin-left: 0;
+  }
+}
